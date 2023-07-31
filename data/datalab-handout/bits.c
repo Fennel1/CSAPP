@@ -142,7 +142,7 @@ NOTES:
  *   Max ops: 14
  *   Rating: 1
  */
-int bitXor(int x, int y) {
+int bitXor(int x, int y) {    // 异或
   return ~(~(~x & y) & ~(x & ~y));
 }
 /* 
@@ -151,7 +151,7 @@ int bitXor(int x, int y) {
  *   Max ops: 4
  *   Rating: 1
  */
-int tmin(void) {
+int tmin(void) {    // 最小的二进制补码整数 10000...
   return 1 << 31;
 }
 //2
